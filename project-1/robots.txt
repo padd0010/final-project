@@ -1,0 +1,8 @@
+
+
+Sitemap: http://padd0010.site44.com/dsn1543/project-1/sitemap.xml
+
+
+User-agent: *
+
+Disallow: /assets/

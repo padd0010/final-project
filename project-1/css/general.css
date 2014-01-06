@@ -1,0 +1,477 @@
+@charset "UTF-8";
+/* Responsive Setup */
+
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
+ 
+html {
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+html body {
+	font-family: 'Noto Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+img {
+	width: 100%;
+}
+
+@media only screen and (min-width: 100em){
+	html {
+		font-size: 1.5em;
+	}
+}
+
+main {
+	margin: 0 auto;
+}
+
+.logo {
+	width: 12rem;
+	margin: 1rem .5rem 0 1rem;
+}
+
+@media only screen and (min-width: 17em){
+	.logo {
+		width: 14rem;
+	}
+}
+
+@media only screen and (min-width: 19em){
+	.logo {
+		width: 15rem;
+	}
+}
+
+@media only screen and (min-width: 21em){
+	.logo {
+		width: 18rem;
+	}
+}
+
+@media only screen and (min-width: 24em){
+	.logo {
+		width: 22rem;
+	}
+}
+
+@media only screen and (min-width: 57em){
+	.logo {
+		padding-top: 1.25rem;
+	}
+}
+
+h1 {
+	font-size: 1.05rem;
+	text-align: center;
+	color: #630;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin: 5rem auto .5rem;
+	text-align: center;	
+	color: #630;
+}
+
+h3 {
+	margin: 3rem 3rem  0;
+	font-size: 1.5rem;
+}
+
+h4 {
+	margin: 1.5rem auto .25rem;
+}
+
+.treats {
+	margin: 3rem auto .5rem;
+	color: #630;
+}
+
+@media only screen and (min-width: 57em){
+	.treats {
+		font-size: 4rem;
+	}
+}
+
+.banner {
+	width:100%;
+	margin-top: 3rem;
+}
+
+@media only screen and (min-width: 57em){
+	.banner {
+		width: 56rem;
+		margin: 3rem auto auto;
+		display: block;
+	}
+}
+
+p {
+	text-align: center;
+}
+
+.link {
+	color: #59f;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.call-us {
+	text-align: center;
+	color: #630;
+}
+
+.call-us dt {
+	font-size: 1.25rem;
+}
+
+/* -------------- Navigation -------------- */
+
+nav {
+	width: 100%;
+	height: 3rem;
+	text-align: center;
+	clear: both;
+	top: 1rem;
+	position: relative;
+}
+
+nav ul {
+	background-color: #630;
+	padding-top: 1rem;
+}
+
+nav li {
+	display: inline-block;
+	font-size: .7rem;
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: Bold;
+	padding-top: 0;
+}
+
+nav a,
+nav a:link {
+	width: 25%;
+	display: block;
+	height: 2.5rem;
+	padding: .25rem;
+	text-transform: uppercase;
+	color: #999;
+	text-decoration: none;	
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+	color: #fff;
+}
+
+nav .selected {
+	color: #fff;
+}
+
+@media only screen and (min-width: 24em){
+	nav li {
+		font-size: 1rem;
+		font-weight: 500;
+		padding: 0 .25rem;
+	}
+}
+
+@media only screen and (min-width: 43em){
+	nav li {
+		padding: 0 1rem;
+	}
+}
+
+@media only screen and (min-width: 57em){
+	nav {
+		float: right;
+		width: auto;
+		padding: 0 5%;
+		margin-top: 1.6rem;
+	}
+	
+	nav li {
+		width: auto;
+	}
+	
+	.logo{
+		margin-top: 1.2rem;
+	}	
+}
+
+/* -------------- Flexslider -------------- */
+
+.flexslider {
+	max-width: 45rem;
+	margin: 3rem auto;
+	width: 93%;
+}
+
+.flex-caption {
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+	padding: 1rem;
+	background-color: rgba(255,255,255,0.7);
+	color: #39F;
+}
+
+/* -------------- Accordian Containers -------------- */
+
+.ac-container {
+	width: 50%;
+	margin: 1rem auto 1rem 5%;
+	min-width: 13rem;
+}
+
+.ac-container label {
+	cursor: pointer;
+	text-transform: uppercase;
+    font-family: 'Noto Sans', sans-serif;
+	font-weight: 500;
+    padding: 5px 20px;
+    position: relative;
+    z-index: 20;
+    display: block;
+    height: 2.5rem;
+    color: #fff;
+	text-align: center;
+    line-height: 33px;
+    font-size: 1rem;
+    background: #630;
+    box-shadow: 
+        0px 0px 0px 1px rgba(155,155,155,0.3), 
+        0px 2px 2px rgba(0,0,0,0.1);
+}
+
+@media only screen and (min-width: 100em){
+	.ac-container label {
+		padding: .5rem;
+	}	
+}
+
+.ac-container label:hover,
+.ac-container input:checked + label:hover {
+    background-color: #fff;
+	color: #39F;
+}
+
+.ac-container label:hover:after,
+.ac-container input:checked + label:hover:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 24px;
+    right: 13px;
+    top: 7px;
+    background: url(../images/arrow-down.png) no-repeat center center;  
+}
+
+.ac-container input:checked + label:hover:after {
+    background-image: url(../images/arrow-up.png);
+}
+
+.ac-container input {
+    display: none;
+}
+
+.ac-container article {
+    background: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    z-index: 10;
+    transition: 
+        height 0.3s ease-in-out, 
+        box-shadow 0.6s linear;
+	text-align: center;
+}
+
+.ac-container article dt {
+	padding-top: .1rem;
+	font-size: 1rem;
+	color: #000;
+}
+
+.ac-container article dl {
+	color: #000;
+	font-size: .75rem;
+	text-align: left;
+	margin: 0 auto;
+	width: 13rem;
+	line-height: .1rem;
+}
+
+.ac-container input:checked ~ article {
+    transition: 
+        height 0.5s ease-in-out, 
+        box-shadow 0.1s linear;
+    box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+}
+
+.ac-container input:checked ~ article.ac-nutrition {
+	height: 31rem;
+	}
+	
+/* -------------- Product List -------------- */
+
+.product {
+	display: block;
+	margin: 3rem auto 1rem 5%;
+	width: 30%;
+}
+
+.product-list li:nth-child(2) {
+	font-size: 1.25rem;
+	margin-bottom: .25rem;
+	width: 90%;
+	margin: .25rem auto;
+}
+.product-list li:nth-child(3) {
+	font-size: .75rem;
+	line-height: 1.25rem;
+	width: 90%;
+	margin: .25rem auto;
+}
+
+@media only screen and (min-width: 30em){
+	.product-list li:nth-child(2) {
+		font-size: 2rem;
+	}
+	
+	.product-list li:nth-child(3) {
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (min-width: 60em){
+	.product-list li:nth-child(2) {
+		font-size: 3rem;
+		margin-bottom: .75rem;
+	}
+	
+	.product-list li:nth-child(3) {
+		font-size: 2rem;
+		line-height: 2rem;
+	}
+}
+
+/* -------------- Recipe List -------------- */
+
+.recipe-list{
+	overflow: auto;
+}
+
+.recipe-list li {
+	width: 45%;
+	margin: 2.5%;
+	float: left;
+}
+
+@media only screen and (min-width: 25em){
+	.recipe-list li {
+		width: 28.33%;
+	}
+}
+
+@media only screen and (min-width: 35em){
+	.recipe-list li {
+		width: 20%;
+	}
+}
+
+/* -------------- Recipe Info List -------------- */
+
+.preview {
+	width: 40%;
+	margin: .75rem 3rem 0;
+	max-width: 20rem;	
+}
+
+ol li {
+	font-size: .9rem;
+	margin-left: 3rem;
+	list-style:decimal;
+	line-height: 1.25rem;
+	margin-bottom: .5rem;
+	max-width: 40rem;
+}
+
+.ingredients {
+	margin-left: 3rem;
+	color: #000;
+}
+
+.ingredients li {
+	font-size: .9rem;
+	list-style:disc;
+	margin-left: 0;
+}
+
+.credit {
+	color: #888;
+	font-size: .75rem;
+	text-align: left;
+	margin-left: 3rem;
+}
+
+/* -------------- Description List -------------- */
+
+dl {
+	margin-left: 1rem;
+}
+
+dt {
+	font-size: 1.75rem;
+	font-weight: bold;
+	margin: 2rem .5rem 0;
+	color: #39f;
+}
+
+dd:nth-child(2) {
+	font-weight: bold;
+}
+
+dd {
+	margin: .5rem;
+	line-height: 1.25rem;
+}
+
+@media only screen and (min-width: 31em){
+	dl {
+		max-width: 29rem;
+		margin: 0 auto;
+	}
+}
+
+/* -------------- Footer -------------- */
+
+footer {
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 500;
+	padding: .5rem;
+	width: 100%;
+	color: #fff;
+	background-color: #630;
+	margin-top: 2.5rem;
+	clear: both;
+}
+
+.footer-icon {
+	width: 1.5rem;
+	margin: .75rem auto;
+	display: block;
+}

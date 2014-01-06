@@ -1,0 +1,18 @@
+/* TEAM */
+
+Designer & Developer: Julia Paddick
+Twitter: @JuliaPaddick
+Location: Ottawa, Canada
+
+
+/* THANKS */
+
+Thanks to my interactive design teacher Tiffany Tse for teaching me how to code better and rewarding our hard work with tasty chocolate.
+
+
+/* SITES */
+
+Last update: 2013/12/07
+Standards: HTML5, CSS3
+Components: Modernizr, Jquery
+Software: Adobe CS6, Livereload, WhatFont
